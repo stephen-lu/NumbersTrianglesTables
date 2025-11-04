@@ -11,8 +11,8 @@ public class TableUtilitiesTest {
     @Test
     public void testTable3() {
         String expected = "  1 |  2 |  3 |\n" +
-                        "  2 |  4 |  6 |\n" +
-                        "  3 |  6 |  9 |\n";
+                          "  2 |  4 |  6 |\n" +
+                          "  3 |  6 |  9 |\n";
 
         String actual = TableUtilities.getMultiplicationTable(3);
         Assert.assertEquals(expected, actual);

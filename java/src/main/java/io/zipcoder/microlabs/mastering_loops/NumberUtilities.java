@@ -12,26 +12,17 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop, int step) {
-        String range = "";
-        for (int i = start; i < stop; i+=step) {
-            range += Integer.toString(i);
-        }
+        String range = getExponentiations(start, stop, step, 1);
         return range;
     }
 
     public static String getRange(int start, int stop) {
-        String range = "";
-        for (int i = start; i < stop; i++) {
-            range += Integer.toString(i);
-        }
+        String range = getRange(start, stop, 1);
         return range;
     }
 
     public static String getRange(int stop) {
-        String range = "";
-        for (int i = 0; i < stop; i++) {
-            range += Integer.toString(i);
-        }
+        String range = getRange(0, stop);
         return range;
     }
 
